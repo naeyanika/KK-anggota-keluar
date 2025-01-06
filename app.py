@@ -1,4 +1,4 @@
-import pandas as pd
+    import pandas as pd
 import streamlit as st
 
 st.title("Kertas Kerja Anggota Keluar")
@@ -34,7 +34,7 @@ if uploaded_tak and uploaded_tlp:
         combined_df["Total Simpanan"] = combined_df["Cr Total"]
 
         # Terima/Bayar = Total Pinjaman - Total Simpanan
-        combined_df["Terima/ Bayar"] = combined_df["Total Pinjaman"] - combined_df["Total Simpanan"]
+        combined_df["Terima/ Bayar"] = combined_df["Total Simpanan"] - combined_df["Total Pinjaman"]
 
         # Kolom tambahan
         combined_df["Form AK"] = ""
