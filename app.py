@@ -65,9 +65,9 @@ if uploaded_tak and uploaded_tlp:
 
         excel_data = convert_df_to_excel(final_df)
         st.download_button(
-            label="Unduh File Excel",
+            label="Unduh KK Anggota Keluar",
             data=excel_data,
-            file_name="Kertas_Kerja_Output.xlsx",
+            file_name="KK Anggota Keluar.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         )
     except Exception as e:
